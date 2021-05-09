@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+.categorie{
+  max-height: auto;
+  width: 86%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  align-items: center;
+  justify-items: center;
+  padding: 7%;
+}
+.app .acceuil2{ 
+  background-color: turquoise;
+  width: 100%;
+  height: auto;
+}
+.present{
+  width: auto;
+  height: 750px;
+  color: #ffffff;
+}
+.present img{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  z-index: -5;
+  transform: translateY(-10%);
+}
+.present .top{
+  margin-top: 15%;
+  width: 40%;
+  padding: 30px;
+}
+.present .top h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+.present .top h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.present .buttom{
+  width: 80%;
+  padding: 40px;
+}
+.present .buttom h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 50%;
+  text-align: justify;
+  line-height: 38px;
+}
+.present p{
+  border-radius: 25px;
+  width: 40%;
+  height: 48px;
+  margin-left: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#ffffffb9;
+  text-align: center;
+  color: black;
+  font-size: 38px;
+  margin-top: 8%;
+}
+.offrlink{
+  position: absolute;
+  background-color:transparent;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+.serchcard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 200px;
+  width: 380px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.serchcard .Item{
+  margin-left: 14%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.serchcard .Item .imgf{
+  height: 200px;
+}
+.serchcard .Item .play{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 30%;
+}
+.serchcard .Item .top{
+  width:130px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65%;
+  background-color:#ffffffb9;
+  text-align: center;
+  color: black;
+}
+.inputt {
+  position: fixed;
+}
+.inputt  input{
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    color: #000000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    border-style: none;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.App .inputt{
+  z-index:  2; 
+  margin-left: 40%;
+  margin-top: 2.15%;
+}
+.listit{
+  max-height: auto;
+  width: 86%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  align-items: center;
+  justify-items: center;
+  padding: 7%;
+}
