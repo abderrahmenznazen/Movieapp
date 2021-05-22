@@ -1,33 +1,27 @@
+import Home from './page/home'
+import Movies from './page/movies'
+import Premium from './page/premium'
 import Navbar from './component/navbar'
-import Films from './component/card'
-import Present from './component/present'
-import Dashboard from './component/offres'
-import Test from './component/saerchapp'
-import Browser from './component/filmdown'
+import Addfilm from './page/dashboard '
+import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
 
 function Compapp() {
     return (
-      <div >
-          <Navbar />
-          <Test className='searchin'/>
-          <Present className='acceuil2' n={1}/>
-          <div className='offrlink'><Dashboard /></div>
-          <div className='categorie'>
-              <Films  n={1}/>
-              <Films  n={3}/>
-              <Films  n={4}/>
-              <Films  n={5}/>
-          </div>
-          <div className='listit'>
-              <Films className=''  n={11}/>
-              <Films  n={16}/>
-              <Films  n={14}/>
-              <Films  n={25}/>
-              <Films  n={15}/>
-              <Films  n={13}/>
-          </div>
-          <Browser/>
-      </div>
+            <Router>
+                <div className='page'>
+                    <div className='component'>
+                        <Route  exact path='/' component={Navbar}/>
+                        <Route  path='/movies' component={Navbar}/>
+                        <Route  path='/premium' component={Navbar}/>
+                        <Switch>
+                            <Route exact path='/' component={Home}/>
+                            <Route exact path='/movies' component={Movies}/>
+                            <Route exact path='/premium' component={Premium}/> 
+                            <Route exact path='/admin' component={Addfilm}/>
+                        </Switch>
+                    </div>
+                </div>
+            </Router>   
     );
   }
   

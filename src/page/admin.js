@@ -1,8 +1,8 @@
 import React ,{ useEffect, useState } from "react";
-import Item from './abonnement'
-import './card.css'
+import Item from '../component/abonnement'
+import '../component/card.css'
 
-function Films ({n}) {
+function List () {
     const [films,setFilms]= useState([])
     const getFilms=()=>{
         fetch('film.json').then
@@ -17,7 +17,7 @@ function Films ({n}) {
 return(
     films.map(el=>
     <div className='element'>
-        {el.movies.filter(movie=>movie.id==n).map(movie=>(
+        {el.movies.slice(movie=>movie.id=3 , movie=>movie.id=8).map(movie=>(
         
                 <div className='cardItem'>
                     <Item cimg={movie.posterUrl}  
@@ -34,4 +34,4 @@ return(
        
 )
 }
-export default Films
+export default List

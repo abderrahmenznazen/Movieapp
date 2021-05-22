@@ -14,7 +14,7 @@ function Present ({n}){
     useEffect(()=>{getPresent()},[])
 return(
     present.map(el=>
-            <div >
+            <div className='prentItems'>
                 {el.items.filter(x=>x.id==n).map(itm=>(
                         <div className='present'>
                             <Item cimg={itm.bgimg}  

@@ -1,16 +1,17 @@
 import './navbar.css'
-import Test from './saerchapp'
+import {Link} from "react-router-dom"
 
-function Navbar (){
+function Navbar (){ 
     return (
         <div className='navbar'>
-            <img className='logo' src='image/movup.png'/>
+            <Link to="/"><img className='logo' src='image/movup.png'/></Link>
             <div className='search'>
             </div>
-            <div className='lien'> 
-                <button className='inscrit'><strong>Movies</strong></button>
-                <button className='inscrit'><img src='image/favoriteW.svg'/></button>
-                <button className='inscrit'><img src='image/loginW.svg'/></button>
+            <div className='lien'>
+                <Link to="/movies"><button className='inscrit' ><strong>Movies</strong></button></Link>
+                <Link to="/premium"><button className='inscrit'><strong>Premium</strong></button></Link>
+                <Link to="/favorit"><button className='inscrit'><img src='image/favoriteW.svg'/></button></Link>
+                <Link to="/inscription"><button className='inscrit'><img src='image/loginW.svg'/></button></Link>
             </div>        
         </div>
     )

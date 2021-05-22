@@ -37,14 +37,13 @@ class Test extends Component {
   render() {
     return (
       <div className='inputt'>
-        <input type="text" onChange={this.thisHundelChange}  />
+        <input type="text" onChange={this.thisHundelChange} defaultValue={true}/>
         <div>{this.state.data.map((el)=>(
        <div>{el.movies.filter((x)=>x.title.includes(this.state.stri)).map((movie)=>(
                            <div className='serchcard'>
                            <Item 
                            cimg={movie.posterUrl}  
                            ctitle={movie.title}
-                           cgenres={movie.genres} 
                            cplay={movie.play}/>
                        </div>)
                        )}
@@ -55,7 +54,6 @@ class Test extends Component {
                            <Item 
                            cimg={movie.posterUrl}  
                            ctitle={movie.title}
-                           cgenres={movie.genres} 
                            cplay={movie.play}/>
                        </div>)
                        )}
@@ -66,7 +64,6 @@ class Test extends Component {
                            <Item 
                            cimg={movie.posterUrl}  
                            ctitle={movie.title}
-                           cgenres={movie.genres} 
                            cplay={movie.play}/>
                        </div>)
                        )}

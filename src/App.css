@@ -74,12 +74,13 @@
 .serchcard{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 200px;
-  width: 380px;
+  height: 100px;
+  width: 310px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 .serchcard .Item{
+  height: 100px;
   margin-left: 14%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -87,15 +88,15 @@
   justify-items: center;
 }
 .serchcard .Item .imgf{
-  height: 200px;
+  height: 100px;
 }
 .serchcard .Item .play{
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 30%;
+  background-color: transparent;
+  height: 50px;
 }
 .serchcard .Item .top{
-  width:130px;
-  height: 100%;
+  width:150px;
+  height: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 65%;
   background-color:#ffffffb9;
@@ -124,10 +125,76 @@
 }
 .listit{
   max-height: auto;
-  width: 86%;
+  height: 312px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   align-items: center;
   justify-items: center;
   padding: 7%;
+}
+.App .listit .element{
+  height: 312px;
+}
+.App .listit .element .cardItem{
+  height: 312px;
+}
+.App .listit .element .cardItem .Item{
+  height: 312px;
+}
+.App .listit .element .cardItem .Item .top {
+  height: 120px;
+  width:225px ;
+}
+.App .listit .element .cardItem .Item .imgf{
+  height: 312px;
+  width:225px ;
+}
+.App .listit .element .cardItem .Item .play{
+height: 50px;
+width: 50px;
+margin-top: 158.5px;
+margin-left: 89.5px;
+}
+.App .listit .element .cardItem .Item .parg{
+  height: 0px;
+}
+.App .listit .element .cardItem .Item .buttom{
+  height: 50px;
+  width:225px ;
+  margin-top: 250px;
+}
+.App .listit .element .cardItem .Item .top  h1{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.App .listit .element .cardItem .Item .top  h2{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+}
+.App .page .moviesPage .prentItems .Item {
+  height: 0px;
+
+  }
+.App .page .component .moviesPage .prentItems .present .Item .parg{
+  background-color: transparent;
+  height: 100px;
+  width: 30%;
+  margin-top: 500px;
+  margin-left: 5%;
+  position: absolute;
+}
+.App .page .moviesPage .prentItems {
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.App .page .addfilm{
+  width: 100%;
+  height: 100%;
+}
+.App .page .component .moviesPage body{
+  position: absolute;
 }
