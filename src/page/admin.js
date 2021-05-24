@@ -2,7 +2,7 @@ import React ,{ useEffect, useState } from "react";
 import Item from '../component/abonnement'
 import '../component/card.css'
 
-function List () {
+function List (n,x) {
     const [films,setFilms]= useState([])
     const getFilms=()=>{
         fetch('film.json').then
@@ -17,7 +17,7 @@ function List () {
 return(
     films.map(el=>
     <div className='element'>
-        {el.movies.slice(movie=>movie.id=3 , movie=>movie.id=8).map(movie=>(
+        {el.movies.slice(movie=>movie.id=n, movie=>movie.id=x).map(movie=>(
         
                 <div className='cardItem'>
                     <Item cimg={movie.posterUrl}  
