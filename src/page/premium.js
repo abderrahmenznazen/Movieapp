@@ -19,6 +19,7 @@ function Premium() {
             </div>
             <List/>
             <Browser/> 
+            
             </body>           
       </div>
     );
