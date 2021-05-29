@@ -21,7 +21,7 @@ function Compapp() {
                         </Switch>
                     </div>
                 </div>
-            </Router>   
+            </Router>  
     );
   }
   

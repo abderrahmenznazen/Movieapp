@@ -198,3 +198,42 @@ margin-left: 89.5px;
 .App .page .component .moviesPage body{
   position: absolute;
 }
+.App .page .component .addfilm{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.App .page .component .addfilm form{
+  width: 40%;
+  background-color: #ffffff98;
+  margin-left: 14%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 180px;
+}
+.App .page .component .addfilm input{
+  width: 160px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #000000;
+}
+.App .page .component .addfilm .inputimg{
+ width: 300px;
+}
+/*.App .page .component .addfilm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}*/
+.App .AppdateModal{
+  z-index: 20;
+}
+.App .forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -8,7 +8,7 @@ import axios from 'axios';
 //<Test x={4} n={9} /><List  />
 
 function AddfilmTest({dataName}) {
-  const [input, setInput]=useState({ } )
+  const [input, setInput]=useState({ })
   
   console.log(input)
 const handleSubmit =(e)=>{
