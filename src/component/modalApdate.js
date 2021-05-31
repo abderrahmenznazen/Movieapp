@@ -9,13 +9,11 @@ export const ApdatModal =({movie})=>{
 
 
 
-    //Declaring Update Modal states=========================
     const [show, setShow] = useState(false);
     const hideModal = () => setShow(false);
     const showModal = () => setShow(true);
 
-    //Posting data from db.json================================
-    //Declaring form input's state
+
     const [apdateFilm, setapdateFilm] = useState({
             title : movie.title,
             year : movie.year,
@@ -23,17 +21,18 @@ export const ApdatModal =({movie})=>{
             directo : movie.director,
             actors : movie.actors,
             runtime : movie.runtime,
+            posterUrl : movie.posterUrl,
+            genres : [movie.genres]
     }) 
 
-    //Handle Change============================================
     const handleChangeUpdate = e => {
         const {name, value} = e.target
         setapdateFilm({...apdateFilm, [name]:value})
     }
 
-    //Editing data from db.json================================
+    
     const handleUpdate = async (id) => {
-    await axios.put(`http://localhost:3004/movis/${id}`,apdateFilm)
+    await axios.put(`http://localhost:3004/movies/${id}`,apdateFilm)
     .then(response => {console.log('Status:' , response.status)
                        console.log('Data : ', response.data)
                        setapdateFilm(response.data)})
@@ -55,7 +54,7 @@ cstar={movie.star}/>
 
 
         return (
-            <main className='modaloffre'>
+            <main className=''>
             <Modal show={show} handleClose={hideModal} >
                 <form  className='formes' >
                         <div className='forms'>
@@ -65,8 +64,9 @@ cstar={movie.star}/>
                             <input type="text" name='director' onChange={handleChangeUpdate} defaultValue={movie.director}   placeholder="director" className='' />
                             <input type="text" name='actors' onChange={handleChangeUpdate}  defaultValue={movie.actors}  placeholder="actors" className='' />
                             <input type="text" name='runtime' onChange={handleChangeUpdate}  defaultValue={movie.runtime} placeholder="runtime" className='' />
+                            <input type="text" name='image'  onChange={handleChangeUpdate}  defaultValue={movie.posterUrl} placeholder="image" className='inputimg' />
+                            <input type="text" name='genres'  onChange={handleChangeUpdate}  defaultValue={movie.genres} placeholder="image" className='inputimg' />
                         </div>
-                        <input type="file" name='image'  onChange={handleChangeUpdate}  placeholder="image" className='inputimg' />
                         <div classname='submitButton'>
                         <button onClick={()=>handleUpdate(movie.id)} >Modifini</button>
                         </div>

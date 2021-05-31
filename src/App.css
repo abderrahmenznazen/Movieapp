@@ -235,5 +235,37 @@ margin-left: 89.5px;
 }
 .App .forms {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr  ;
+}
+.App .getItems{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ align-items: center;  
+ justify-items: center;
+}
+.App .admindashbord {
+  width: 200px;
+  padding: 20px;
+}
+.App .admindashbord  .adminbutton{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.App .admindashbord  .adminbutton button{
+  width: 80px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.App .admindashbord .cardItem {
+  height: 300px;
+}
+.App .admindashbord .cardItem .buttom{
+  width: 200px;
+  margin-top: 20%;
+}
+.App .admindashbord .cardItem .top {
+  width: 200px;
 }

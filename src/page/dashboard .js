@@ -21,22 +21,23 @@ const handleSubmit =(e)=>{
     return (
         <div className='addfilm'>
           <form onSubmit={handleSubmit}>
-          <div>
+          <div> 
             <input type="text" name='title'  onChange={(e) => setInput({ ...input, title: e.target.value })}  placeholder="title" className='' />
             <input type="text" name='year'  onChange={(e) => setInput({ ...input, year: e.target.value })}  placeholder="year" className='' />
             <input type="text" name='plot'  onChange={(e) => setInput({ ...input, plot: e.target.value })} placeholder="plot" className='' />
             <input type="text" name='director' onChange={(e) => setInput({ ...input, director: e.target.value })}  placeholder="director" className='' />
             <input type="text" name='actors' onChange={(e) => setInput({ ...input, actors: e.target.value })} placeholder="actors" className='' />
             <input type="text" name='runtime' onChange={(e) => setInput({ ...input, runtime: e.target.value })} placeholder="runtime" className='' />
+            <input type="text" name='genres' onChange={(e) => setInput({ ...input, genres: e.target.value })} placeholder="genres" className='' />
             </div>
-            <input type="file" name='image'  onChange={(e) => setInput({ ...input, image: e.target.value })}  placeholder="image" className='inputimg' />
+            <input type="file" name='posterUrl'  onChange={(e) => setInput({ ...input, posterUrl: e.target.value })}  placeholder="posterUrl" className='inputimg' />
             
             <div classname='submitButton'>
                 <button type='submit'>submit</button>
                 <button onClick={(element)=>delete(element.id)}>delete</button>
             </div>
           </form>  
-          <GetFilm className='getItems'/>
+          <div className='getItems'><GetFilm /></div>
       </div>
     );
   }

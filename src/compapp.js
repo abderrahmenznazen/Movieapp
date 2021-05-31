@@ -4,6 +4,7 @@ import Premium from './page/premium'
 import Navbar from './component/navbar'
 import Addfilm from './page/dashboard '
 import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
+import firebase from "firebase/app"
 
 function Compapp() {
     return (

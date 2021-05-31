@@ -22,18 +22,18 @@ export const GetFilm =()=>{
     
         return (
             getFilm.map(movie=>
-                        <div className='cardItem'>
-                            <Item cimg={movie.posterUrl}  
-                            ctitle={movie.title} 
-                            cicon={movie.icon}  
-                            cgenres={movie.genres} 
-                            cyear={movie.year}
-                            cplay={movie.play}
-                            cstar={movie.star}/>
-                            <button onClick={()=>Delete(movie.id)}>delete</button>
-                            <ApdatModal movie={movie} className='AppdateModal'/>
+                    <div className='admindashbord'>
+                            <div className='cardItem'>
+                                <Item cimg={movie.posterUrl}  
+                                ctitle={movie.title} 
+                                cgenres={movie.genres} 
+                                cyear={movie.year}/>
+                            </div>
+                            <div className='adminbutton'>
+                                <button onClick={()=>Delete(movie.id)}>delete</button>
+                                <ApdatModal movie={movie} className='AppdateModal'/>
+                            </div>
                     </div>
                     )
-                )
-           
+                )     
 }
