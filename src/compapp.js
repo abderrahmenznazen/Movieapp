@@ -3,6 +3,7 @@ import Movies from './page/movies'
 import Premium from './page/premium'
 import Navbar from './component/navbar'
 import Addfilm from './page/dashboard '
+import Addfilmfb from '../src/component/FirebaseApp/firebaseAdmin'
 import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
 import firebase from "firebase/app"
 
@@ -19,6 +20,7 @@ function Compapp() {
                             <Route exact path='/movies' component={Movies}/>
                             <Route exact path='/premium' component={Premium}/> 
                             <Route exact path='/admin' component={Addfilm}/>
+                            <Route exact path='/adminfb' component={Addfilmfb}/>
                         </Switch>
                     </div>
                 </div>

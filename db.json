@@ -10,6 +10,30 @@
       "genres": "kethb 3la 3ajla",
       "posterUrl": "C:\\fakepath\\flm17.jpeg",
       "id": 1
+    },
+    {
+      "posterUrl": "C:\\fakepath\\flm12.jpeg",
+      "id": 2
+    },
+    {
+      "year": "chaine",
+      "plot": "sa",
+      "director": "sa",
+      "runtime": "fz",
+      "genres": "Mystery ,Thriller ,action",
+      "title": "chaine",
+      "actors": "fzfzfzf",
+      "id": 3
+    },
+    {
+      "title": "Valkyrie Wa Zahra",
+      "year": "sas",
+      "director": "sa",
+      "actors": "fz",
+      "runtime": "ghir ma ta9la9ch",
+      "genres": "Mystery ,Thriller ,action",
+      "plot": "dadad",
+      "id": 4
     }
   ],
   "genres": [
@@ -170,24 +194,6 @@
       "posterUrl": "image/flm8.jpeg",
       "genres": "Mystery ,Thriller ",
       "id": 8
-    },
-    {
-      "id": 9,
-      "star": "image/starhalfwhite.svg",
-      "icon": "image/favoriteW.svg",
-      "play": "image/arrow.svg",
-      "title": "The Intouchables",
-      "year": "2011",
-      "runtime": "112",
-      "genres": [
-        "Biography ",
-        "Comedy ",
-        "Drama "
-      ],
-      "director": "Olivier Nakache, Eric Toledano",
-      "actors": "François Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot",
-      "plot": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
-      "posterUrl": "image/flm9.jpeg"
     },
     {
       "id": 10,
