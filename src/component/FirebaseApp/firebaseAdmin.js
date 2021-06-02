@@ -7,13 +7,12 @@ import {GetFilmfb} from '../FirebaseApp/postFilmFireBase'
 
 function Addfilmfb() {
   const [input, setInput]=useState({})
-  var db= `https://appmovies-99fed-default-rtdb.firebaseio.com/movies.json`
 
 
 const handleSubmit =(e)=>{
   console.log(input)
   e.preventDefault()
-  axios.post("https://appmovies-99fed-default-rtdb.firebaseio.com/movies.json",input)
+  axios.post("https://appmovies-99fed-default-rtdb.firebaseio.com/movies.json",JSON.stringify(input))
   .then((response)=>console.log(input))
     .catch((error)=>console.log(error));
     console.log(input)

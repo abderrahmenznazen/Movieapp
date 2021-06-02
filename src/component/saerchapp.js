@@ -23,6 +23,7 @@ class Test extends Component {
   }
 
   thisHundelChange = (e) => {
+    e.preventDefault()
     if(e.target.value == ""){
         this.setState({
       stri: "{null}"
@@ -37,7 +38,7 @@ class Test extends Component {
   render() {
     return (
       <div className='inputt'>
-        <input type="text" onChange={this.thisHundelChange} placeholder='Search' defaultValue='hhhhhhhhh'/>
+        <input type="text" onChange={this.thisHundelChange} placeholder='Search' />
         <div>{this.state.data.map((el)=>(
        <div>{el.movies.filter((x)=>x.title.includes(this.state.stri)).map((movie)=>(
                            <div className='serchcard'>     
