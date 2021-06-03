@@ -4,7 +4,7 @@ import Compapp from './compapp'
 function App() {
   return (
     <div className="App">
-      <Compapp/>
+      <Compapp/>    
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 import React ,{ useEffect, useState } from "react";
 import Item from '../abonnement'
-import {ApdatModal} from '../modalApdate'
+import {ApdatModalfb} from './apdatefirebase'
 import '../card.css'
 
 
@@ -14,6 +14,7 @@ export const GetFilmfb =()=>{
     
     const getItems =()=>{
         axios.get("https://appmovies-99fed-default-rtdb.firebaseio.com/movies/.json").then(
+            
             response => setGetFilm (response.data)
         ).catch(error=>console.log(error))
     }
@@ -38,7 +39,7 @@ export const GetFilmfb =()=>{
                             </div>
                             <div className='adminbutton'>
                                 <button onClick={()=>Delete(id)}>delete</button>
-                                <ApdatModal movie={(id)} className='AppdateModal'/>
+                                <ApdatModalfb element={getFilm[id]} x={id} className='AppdateModal'/>
                             </div>
                     </div>
                     )

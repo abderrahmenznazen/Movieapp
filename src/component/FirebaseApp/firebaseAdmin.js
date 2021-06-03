@@ -33,7 +33,7 @@ const handleSubmit =(e)=>{
             </div>
             <input type="file" name='posterUrl'  onChange={(e) => setInput({ ...input, posterUrl: e.target.value })}  placeholder="posterUrl" className='inputimg' />
             
-            <div classname='submitButton'>
+            <div className='submitButton'>
                 <button type='submit'>submit</button>
                 <button onClick={(element)=>delete(element.id)}>delete</button>
             </div>
