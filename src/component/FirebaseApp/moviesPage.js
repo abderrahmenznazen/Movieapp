@@ -4,7 +4,7 @@ import {FavFilmfb} from '../FirebaseApp/favorit'
 export const ListMovies=()=>{
 
     return(
-        <div className='admincardlist'>
+        <div className='favcardlist'>
             <FavFilmfb/>
         </div>
     )

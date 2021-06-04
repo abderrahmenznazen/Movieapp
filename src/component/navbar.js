@@ -8,7 +8,7 @@ function Navbar (){
             <div className='search'>
             </div>
             <div className='lien'>
-                <Link to="home/movies"><button className='inscrit' ><strong>Movies</strong></button></Link>
+                <Link to="/movies"><button className='inscrit' ><strong>Movies</strong></button></Link>
                 <Link to="/premium"><button className='inscrit'><strong>Premium</strong></button></Link>
                 <Link to="/favorit"><button className='inscrit'><img src='image/favoriteW.svg'/></button></Link>
                 <Link to="/adminfb-modifier"><button className='inscrit'><img src='image/loginW.svg'/></button></Link>

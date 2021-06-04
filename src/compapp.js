@@ -16,13 +16,13 @@ function Compapp() {
             <Router>
                 <div className='page'>
                     <div className='component'>
-                        <Route  exact path='/' component={Navbar}/>
+                        <Route  exact path='/home' component={Navbar}/>
                         <Route  path='/movies' component={Navbar}/>
                         <Route  path='/premium' component={Navbar}/>
                         <Route  path='/adminfb-modifier' component={Sidebar}/>
                         <Route  path='/adminfb-ajouter' component={Sidebar}/>
                         <Switch>
-                            <Route exact path='/' component={Home}/>
+                            <Route exact path='/home' component={Home}/>
                             <Route exact path='/movies' component={ListMovies}/>
                             <Route exact path='/premium' />
                             <Route exact path='/favorit' component={FavoritFilm}/> 

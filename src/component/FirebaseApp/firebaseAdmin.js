@@ -37,7 +37,7 @@ const handleSubmit =(e)=>{
             <input type="text" name='posterUrl'  onChange={(e) => setInput({ ...input, posterUrl: e.target.value })}  placeholder="posterUrl" className='inputimg' />
           </div>
             <div className='submitButton'>
-                <button type='submit'>Ajouter</button>
+                <button type='submit'>Ajouter &#10003;</button>
                 <button onClick={refreshPage}>Refresh</button>
             </div>
           </form>  

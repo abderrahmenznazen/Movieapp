@@ -75,9 +75,9 @@ cstar={movie.star}/>
                             <input type="text" name='genres'  onChange={handleChangeUpdate}  defaultValue={element.genres} placeholder="genres" className='' />
                         </div>
                 </form> 
-                <button onClick={() => handleUpdatefb(x)}>Modifier</button>  
+                <button onClick={() => handleUpdatefb(x)}>Modifier &#10003;</button>  
             </Modal>
-            <button type="button" onClick={showModal}>Edit</button>
+            <button type="button" onClick={showModal}><img src='image/editwhite.svg'/></button>
  
 
           </main> 

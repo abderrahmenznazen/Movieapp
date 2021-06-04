@@ -243,14 +243,31 @@ width: 300px;
   grid-template-columns: 1fr 1fr  ;
   height: 50px;
 }
-.App .admincardlist{
+.App .favcardlist{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.App .page .component .favcardlist{
+  padding:75px;
+  margin-top: 5%;
+  margin-left: 2.5%;
+}
+.App .page .component .favcardlist .admindashbord {
+  width: 200px;
+  padding: 20px;
+
+}
+
 .App .page .component{
 display: grid;
 grid-template-columns: 1fr 1fr;
-background-color: rgba(0, 0, 0, 0.8);
+background-color: rgba(0, 0, 0, 0.1);
+}
+.App .admincardlist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 .App .page .component .admincardlist{
   padding:75px;
@@ -287,17 +304,29 @@ background-color: rgba(0, 0, 0, 0.8);
   border-radius: 12px;
 background-color: rgba(255, 255, 255, 0.9);
 }
+.App .admindashbord .cardItem .buttom{
+  z-index: -1;
+}
 .App .admindashbord  .adminbutton{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  margin-top: -30%;
+  margin-bottom: 100px;
+  z-index: 15;
+
 }
 .App .admindashbord  .adminbutton button{
   width: 80px;
   height: 35px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   border-radius: 10px;
+  border: none;
+  color: #ffffff;
+}
+.App .admindashbord  .adminbutton button:hover{
+  cursor: pointer;
 }
 .App .admindashbord .cardItem {
   height: 300px;

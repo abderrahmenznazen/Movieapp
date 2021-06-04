@@ -19,12 +19,16 @@ export const GetFilmfb =()=>{
         ).catch(error=>console.log(error))
     }
 
-    
     const Delete =(id)=>{
         axios.delete(`https://appmovies-99fed-default-rtdb.firebaseio.com/movies/${id}.json`,getFilm)  
-        .then((response)=>console.log(response))
+        .then((response)=>{console.log(response);refreshPage()})
         .catch((error)=>console.log(error));
       }
+
+    const refreshPage = ()=>{
+        window.location.reload();
+    }
+
     useEffect (()=>{getItems()},[])
 
 //;nconst id=Object.keys(movie.id)
@@ -37,10 +41,10 @@ export const GetFilmfb =()=>{
                                 <Item cimg={getFilm[id].posterUrl}  
                                 ctitle={getFilm[id].title} 
                                 cgenres={getFilm[id].genres} 
-                                cyear={getFilm[id].year}/>
+                                />
                             </div>
                             <div className='adminbutton'>
-                                <button onClick={()=>Delete(id)} >delete</button>
+                                <button onClick={()=>Delete(id)} ><img src='image/deletewhite.svg'/></button>
                                 <ApdatModalfb element={getFilm[id]} x={id} className='AppdateModal'/>
                             </div>
                     </div>
