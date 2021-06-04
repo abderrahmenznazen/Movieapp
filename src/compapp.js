@@ -7,6 +7,8 @@ import Addfilmfb from '../src/component/FirebaseApp/firebaseAdmin'
 import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
 import {Listfilm} from './component/FirebaseApp/adminfilmlist'
 import {Sidebar} from './component/FirebaseApp/adminfirebase'
+import {FavFilmfb} from './component/FirebaseApp/favorit'
+import {FavoritFilm} from './component/FirebaseApp/favbuttonfb'
 
 function Compapp() {
     return (
@@ -20,8 +22,8 @@ function Compapp() {
                         <Route  path='/adminfb-ajouter' component={Sidebar}/>
                         <Switch>
                             <Route exact path='/' component={Home}/>
-                            <Route exact path='/movies' component={Movies}/>
-                            <Route exact path='/premium' component={Premium}/> 
+                            <Route exact path='/movies' component={FavFilmfb}/>
+                            <Route exact path='/premium' component={FavoritFilm}/> 
                             <Route exact path='/admin' component={Addfilm}/>
                             <Route exact path='/adminfb-modifier' component={Listfilm}/>
                             <Route exact path='/adminfb-ajouter' component={Addfilmfb}/>
