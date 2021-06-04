@@ -29,13 +29,16 @@ export const ApdatModalfb =({x, element})=>{
         console.log("gfhjkhg",apdateFilmfb)
     }
 
-  
+    const refreshPage = ()=>{
+        window.location.reload();
+    }
     
    const handleUpdatefb =  (id) => {
        console.log("pssssssst",id)
  axios.put(`https://appmovies-99fed-default-rtdb.firebaseio.com/movies/${id}.json`,apdateFilmfb)
     .then(response => { setapdateFilmfb(response.data)
-        alert ("valider la modification")
+                        alert ("Vous voulez valider votre modification ? ")
+                        refreshPage ()
                          console.log('Status: ' , response.status)
                         console.log('Data : ', response.data)
                        })
@@ -68,17 +71,14 @@ cstar={movie.star}/>
                             <input type="text" name='director' onChange={handleChangeUpdate} defaultValue={element.director}   placeholder="director" className='' />
                             <input type="text" name='actors' onChange={handleChangeUpdate}  defaultValue={element.actors}  placeholder="actors" className='' />
                             <input type="text" name='runtime' onChange={handleChangeUpdate}  defaultValue={element.runtime} placeholder="runtime" className='' />
-                            <input type="text" name='image'  onChange={handleChangeUpdate}  defaultValue={element.posterUrl} placeholder="image" className='inputimg' />
-                            <input type="text" name='genres'  onChange={handleChangeUpdate}  defaultValue={element.genres} placeholder="image" className='inputimg' />
-                            <button onClick={() => handleUpdatefb(x)} >Modifini</button>
-                        </div>
-                        <div className='submitButton'>
-                      
+                            <input type="text" name='posterUrl'  onChange={handleChangeUpdate}  defaultValue={element.posterUrl} placeholder="posterUrl" className='inputimg' />
+                            <input type="text" name='genres'  onChange={handleChangeUpdate}  defaultValue={element.genres} placeholder="genres" className='' />
                         </div>
                 </form> 
+                <button onClick={() => handleUpdatefb(x)}>Modifier</button>  
             </Modal>
             <button type="button" onClick={showModal}>Edit</button>
-            <button onClick={() => handleUpdatefb(x)}></button>   
+ 
 
           </main> 
                 )

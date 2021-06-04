@@ -201,18 +201,23 @@ margin-left: 89.5px;
 .App .page .component .addfilm{
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 .App .page .component .addfilm form{
   width: 40%;
-  background-color: #ffffff98;
-  margin-left: 14%;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  padding: 180px;
+  margin-top: 6%;
+  margin-bottom: 10%;
+  margin-left: -10%;
+}
+.App .page .component .addfilm form .plot{
+width: 300px;
+}
+.App .page .component .addfilm form .addbuttonfb{
+  padding: 40px;
 }
 .App .page .component .addfilm input{
   width: 160px;
@@ -236,16 +241,51 @@ margin-left: 89.5px;
 .App .forms {
   display: grid;
   grid-template-columns: 1fr 1fr  ;
+  height: 50px;
 }
-.App .getItems{
- display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- align-items: center;  
- justify-items: center;
+.App .admincardlist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.App .admindashbord {
+.App .page .component{
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-color: rgba(0, 0, 0, 0.8);
+}
+.App .page .component .admincardlist{
+  padding:75px;
+  margin-top: -5%;
+}
+.App .page .component .admincardlist .admindashbord {
   width: 200px;
   padding: 20px;
+
+}
+.App .page .component .admincardlist .admindashbord .modal {
+  position: fixed;
+  width: 100%;
+}
+.App .page .component .admincardlist .admindashbord .modal-main{
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  margin-left: -34%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.App .page .component .admincardlist .admindashbord .modal-main .forms{
+  display: grid;
+  grid-template-columns: 1fr ;
+  width: 300px;
+  margin-top: -50%;
+}
+.App .page .component .admincardlist .admindashbord .modal-main .forms input{
+  height: 30px;
+  border-radius: 12px;
+background-color: rgba(255, 255, 255, 0.9);
 }
 .App .admindashbord  .adminbutton{
   display: grid;
@@ -255,7 +295,7 @@ margin-left: 89.5px;
 }
 .App .admindashbord  .adminbutton button{
   width: 80px;
-  height: 40px;
+  height: 35px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
@@ -268,4 +308,47 @@ margin-left: 89.5px;
 }
 .App .admindashbord .cardItem .top {
   width: 200px;
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width :290px;/* 0 width - change this with JavaScript */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 04px 4px 4px 9px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }

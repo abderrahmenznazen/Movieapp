@@ -18,6 +18,7 @@ export const GetFilmfb =()=>{
             response => setGetFilm (response.data)
         ).catch(error=>console.log(error))
     }
+
     
     const Delete =(id)=>{
         axios.delete(`https://appmovies-99fed-default-rtdb.firebaseio.com/movies/${id}.json`,getFilm)  
@@ -27,10 +28,11 @@ export const GetFilmfb =()=>{
     useEffect (()=>{getItems()},[])
 
 //;nconst id=Object.keys(movie.id)
-    
+
+
         return (
             (Object.keys(getFilm)).map(id=>
-                    <div className='admindashbord'>
+                    <div className='admindashbord' >
                             <div className='cardItem'>
                                 <Item cimg={getFilm[id].posterUrl}  
                                 ctitle={getFilm[id].title} 
@@ -38,7 +40,7 @@ export const GetFilmfb =()=>{
                                 cyear={getFilm[id].year}/>
                             </div>
                             <div className='adminbutton'>
-                                <button onClick={()=>Delete(id)}>delete</button>
+                                <button onClick={()=>Delete(id)} >delete</button>
                                 <ApdatModalfb element={getFilm[id]} x={id} className='AppdateModal'/>
                             </div>
                     </div>
