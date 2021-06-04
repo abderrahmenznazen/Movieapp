@@ -1,39 +1,22 @@
 {
   "posts": [
     {
-      "title": "avangers",
-      "year": "2020",
-      "plot": "this film ",
-      "director": "mech 3aref",
-      "actors": "barcha fallama",
-      "runtime": "ghir ma ta9la9ch",
-      "genres": "kethb 3la 3ajla",
-      "posterUrl": "C:\\fakepath\\flm17.jpeg",
-      "id": 1
-    },
-    {
-      "posterUrl": "C:\\fakepath\\flm12.jpeg",
-      "id": 2
-    },
-    {
-      "year": "chaine",
-      "plot": "sa",
-      "director": "sa",
-      "runtime": "fz",
-      "genres": "Mystery ,Thriller ,action",
-      "title": "chaine",
-      "actors": "fzfzfzf",
-      "id": 3
-    },
-    {
-      "title": "Valkyrie Wa Zahra",
-      "year": "sas",
-      "director": "sa",
-      "actors": "fz",
-      "runtime": "ghir ma ta9la9ch",
-      "genres": "Mystery ,Thriller ,action",
-      "plot": "dadad",
-      "id": 4
+      "id": 20,
+      "star": "image/starhalfwhite.svg",
+      "icon": "image/favoriteW.svg",
+      "play": "image/arrow.svg",
+      "title": "Sid and Nancy",
+      "year": "1986",
+      "runtime": "112",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Music"
+      ],
+      "director": "Alex Cox",
+      "actors": "Gary Oldman, Chloe Webb, David Hayman, Debby Bishop",
+      "plot": "Morbid biographical story of Sid Vicious, bassist with British punk group the Sex Pistols, and his girlfriend Nancy Spungen. When the Sex Pistols break up after their fateful US tour, ...",
+      "posterUrl": "image/flm20.jpeg"
     }
   ],
   "genres": [

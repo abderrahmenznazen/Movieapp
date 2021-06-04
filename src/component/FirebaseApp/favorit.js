@@ -11,6 +11,7 @@ export const FavFilmfb =()=>{
 
     const [getfilmFav,setgetfilmFav]= useState([])
     const [FilmFav,setFilmFav]= useState([])
+   
     console.log(FilmFav)
     
     const getItems =()=>{
@@ -20,17 +21,19 @@ export const FavFilmfb =()=>{
     }
    
     const handleSubmit =()=>{
-        console.log(FilmFav)
-
-        axios.post(`https://appmovies-99fed-default-rtdb.firebaseio.com/posts.json`,(FilmFav))
+        axios.post(`https://appmovies-99fed-default-rtdb.firebaseio.com/posts.json`,FilmFav)
         .then((response)=>console.log(response.data))
-          .catch((error)=>console.log(error));
+          .catch((error)=>console.log(error)); 
         }
     const refreshPage = ()=>{
           window.location.reload();
     }
     
-
+    const Delete =(id)=>{
+        axios.delete(`https://appmovies-99fed-default-rtdb.firebaseio.com/movies/${id}.json`,getfilmFav)  
+        .then((response)=>console.log(response))
+        .catch((error)=>console.log(error));
+      }
     useEffect (()=>{getItems()},[])
 
 //;nconst id=Object.keys(movie.id)
@@ -46,8 +49,7 @@ export const FavFilmfb =()=>{
                                 cyear={getfilmFav[id].year}/>
                             </div>
                             <div className='adminbutton'>
-                                <button onClick={()=>setFilmFav(getfilmFav[id]),handleSubmit} >favorit</button>
-                                <ApdatModalfb element={getfilmFav[id]} x={id} className='AppdateModal'/>
+                                <button onClick={()=>{setFilmFav(getfilmFav[id]); handleSubmit()}} >favorit</button>
                             </div>
                     </div>
                     )

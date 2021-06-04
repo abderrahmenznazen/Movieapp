@@ -1,7 +1,6 @@
 import axios from "axios";
 import React ,{ useEffect, useState } from "react";
 import Item from '../abonnement'
-import {ApdatModalfb} from './apdatefirebase'
 import '../card.css'
 
 
