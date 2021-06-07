@@ -1,17 +1,23 @@
 .App {
   text-align: center;
 }
-.categorie{
+.App .categorie {
   max-height: auto;
-  width: 86%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   align-items: center;
   justify-items: center;
-  padding: 7%;
+  padding:8%;
+}
+.App .categorie .Item{
+  width: 250px;
+}
+.App .categorie .imgf{
+  width: 250px;
 }
 .app .acceuil2{ 
-  background-color: turquoise;
+
   width: 100%;
   height: auto;
 }
@@ -53,16 +59,16 @@
   line-height: 38px;
 }
 .present p{
-  border-radius: 25px;
-  width: 40%;
-  height: 48px;
-  margin-left: 30%;
+  border-radius: 24px;
+  width: 30%;
+  height: 38px;
+  margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
   background-color:#ffffffb9;
   text-align: center;
   color: black;
-  font-size: 38px;
-  margin-top: 8%;
+  font-size: 28px;
+  margin-top: 12%;
 }
 .offrlink{
   position: absolute;
@@ -125,43 +131,43 @@
 }
 .listit{
   max-height: auto;
-  height: 312px;
+  height: 260px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
   align-items: center;
   justify-items: center;
-  padding: 7%;
+  padding: 9%;
 }
 .App .listit .element{
-  height: 312px;
+  height: 260px;
 }
 .App .listit .element .cardItem{
-  height: 312px;
+  height: 260px;
 }
 .App .listit .element .cardItem .Item{
-  height: 312px;
+  height: 260px;
 }
 .App .listit .element .cardItem .Item .top {
-  height: 120px;
-  width:225px ;
+  height: 80px;
+  width:200px ;
 }
 .App .listit .element .cardItem .Item .imgf{
-  height: 312px;
-  width:225px ;
+  height: 260px;
+  width:200px ;
 }
 .App .listit .element .cardItem .Item .play{
 height: 50px;
 width: 50px;
-margin-top: 158.5px;
-margin-left: 89.5px;
+margin-top: 10%;
+margin-left: 6.5%;
 }
 .App .listit .element .cardItem .Item .parg{
   height: 0px;
 }
 .App .listit .element .cardItem .Item .buttom{
   height: 50px;
-  width:225px ;
-  margin-top: 250px;
+  width:200px ;
+  margin-top: 200px;
 }
 .App .listit .element .cardItem .Item .top  h1{
   color: #ffffff;
@@ -380,4 +386,15 @@ background-color: rgba(255, 255, 255, 0.9);
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+.App .footrelink{
+  margin-left: 90px;
+  position: absolute;
+  height: 28px;
+  
+
+}
+.App .footrelink a{
+  margin-top: 40px;
+  padding: 100px;
 }

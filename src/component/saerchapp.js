@@ -26,7 +26,7 @@ class Test extends Component {
     e.preventDefault()
     if(e.target.value == ""){
         this.setState({
-      stri: "{null}"
+      stri: null
     });
 }else{
   

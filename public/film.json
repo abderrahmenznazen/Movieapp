@@ -87,6 +87,10 @@
         {   "id":"6",
             "bgimg":"image/ph7.jpeg",
             "offre":"Movies"
+        },
+        {   "id":"7",
+            "bgimg":"image/ph06.webp",
+            "offre":"Movies"
         }
     ],
     "movies": [

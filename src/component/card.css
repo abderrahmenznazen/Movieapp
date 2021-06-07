@@ -1,6 +1,6 @@
 .cardItem{
     background-color: transparent;
-    max-height: 500px;
+    max-height: 400px;
     width :100%;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
